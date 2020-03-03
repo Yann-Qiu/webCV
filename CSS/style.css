@@ -1,0 +1,459 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: rgb(15,81,135);
+}
+body{
+	background-color: rgb(233,244,253);
+}
+
+/*导航条*/
+header{
+	position: fixed;
+	width: 100px;
+	top: 50%;
+	margin-top: -125px;
+	right: 15px;
+}
+header nav{
+	text-align: center;
+}
+header nav>.nav-item{
+	font-size: 15px;
+	line-height: 50px;
+	margin-top: 1px;
+	border: 1px solid #fff;
+	height: 50px;
+	border-radius: 5%;
+	background-color: rgb(9,140,205);
+	color: #fff;
+	font-family: "Constantia";
+	font-weight: bold;
+	cursor: pointer;
+}
+header nav>.active{
+	background-color: rgb(8,123,180);
+	transform: scale(1.1);
+	transition: all 1s;
+	position: relative;
+	-webkit-animation: twinkling 2.1s infinite ease-in-out;
+}
+
+@-webkit-keyframes twinkling {
+	0% {
+	opacity:0.4;
+	filter:alpha(opacity=20);
+	-webkit-transform:scale(1.1);
+	}
+	50% {
+		opacity:0.6;
+		filter:alpha(opacity=50);
+		-webkit-transform:scale(1.2);
+	}
+	100% {
+		opacity:0.4;
+		filter:alpha(opacity=20);
+		-webkit-transform:scale(1.1);
+	}
+}
+
+.page{
+	width: 80%;
+	margin: 0 auto;
+	height: 750px;
+	overflow: hidden;
+	font-family: 'Constantia';
+	min-width: 1000px !important;
+	/*border-bottom: 1px solid black;*/
+	/*background: url(../img/chevron.png) no-repeat;
+	background-size: cover;*/
+}
+body section .headlline{
+	font-size: 50px;
+	line-height: 150px;
+	text-align: center;
+	width: 100%;
+	height: 150px;
+	font-family: 'Constantia';
+	font-weight: bold;
+	color: #fff;
+	background-color: rgba(104,200,248,.7);
+	box-shadow: 1px 1px 25px #fff inset;
+	border-radius: 20px;
+	min-width: 1000px !important;
+}
+
+/*第一幕*/
+.info{
+	/*padding-top: 30px;*/
+	position: relative;
+}
+.info .content-1{
+	padding-left: 250px;
+	padding-right: 250px;
+	position: relative;
+}
+.info .image{
+	width: 240px;
+	height: 500px;
+	overflow: hidden;
+	background-size: auto 500px;
+	position: absolute;
+	background-position: center center;
+}
+.info .left{
+	background-image: url(../img/back4.jpg);
+	left: 0;
+	bottom: 50px;
+	border-radius: 10px;
+}
+.info .left:before,.info .right:after{
+	content: ' ';
+	width: 240px;
+	height: 500px;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+.info .right{
+	background-image: url(../img/back5.jpg);
+	right: 0;
+	top: 50px;
+	border-radius: 10px;
+}
+.info .content-1 .name{
+	padding-top: 120px;
+	padding-left: 90px;
+	font-size: 85px;
+	color: rgb(120,153,226);
+	transition-delay: 1s;
+}
+.info .content-1>img:first-child{
+	width: 225px;
+	height: 330px;
+	position: absolute;
+	right: 8px;
+	top: 70px;
+	z-index: 10;
+}
+.info .content-1 .detail{
+	margin-top: 50px;
+	margin-left: 70px;
+	line-height: 40px;
+	font-size: 25px;
+}
+.info .content-1 .detail img{
+	width: 40px;
+	height: 40px;
+}
+
+/*第二幕*/
+.formation{
+	position: relative;
+}
+.formation>img:first-child{
+	margin-top: 30px;
+	width: 130px;
+	height: 100px;
+	margin-left: 50px;	
+}
+.formation .content2{
+	margin-top: 60px;
+	padding-left: 30px;
+	transition-delay: .5s;
+}
+.formation .content2 > div > img{
+	width: 40px;
+	height: 40px;
+}
+.formation .time{
+	display: inline-block;
+	width: 500px;
+	height: 100px;
+	font-size: 45px;
+	line-height: 45px;
+}
+.formation .detail{
+	display: inline-block;
+	font-size: 30px;
+	line-height: 30px;
+}
+.formation>img:nth-child(3){
+	width: 400px;
+	height: 215px;
+	position: absolute;
+	bottom: : 0;
+	right: 175px;
+	border-radius: 5%;
+}
+.formation .shadow{
+	width: 400px;
+	height: 215px;
+	position: absolute;
+	bottom: : 0;
+	right: 175px;
+	background-color: rgba(0,0,0,.5);
+	z-index: 100000;	
+	border-radius: 5%;
+}
+
+/*第三幕*/
+.experience{
+	position: relative;
+}
+.experience .content{
+	margin-left: 150px;
+	margin-top: 110px;
+}
+.experience .content .time{
+	padding-top: 8px;
+	padding-bottom: 6px;
+	font-size: 30px;
+	line-height: 30px;
+}
+.experience .content .intro{
+	padding-top: 8px;
+	padding-bottom: 6px;
+	font-size: 25px;
+	line-height: 25px;
+}
+.experience .content .detail{
+	padding-top: 8px;
+	padding-bottom: 6px;
+	font-size: 18px;
+	line-height: 18px;
+}
+.experience .content .detail img{
+	width: 20px;
+	height: 20px;
+}
+.experience>img:first-child{
+	position: absolute;
+	right: 70px;
+	top: 30px;
+	width: 150px;
+	height: 150px;
+	transition-delay: .5s
+}
+.experience>img:last-child{
+	position: absolute;
+	bottom: 0;
+	right: -170px;
+	margin-bottom: -554px;
+	width: 1108px;
+	height: 1020px;
+	opacity: 0.4;
+	z-index: -1;
+}
+
+/*第四屏*/
+.lang_info{
+	position: relative;
+}
+.lang_info .content{
+	padding-top: 50px;
+	position: relative;
+}
+.lang_info .content>img:first-child{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 50px;
+	left: 30px;
+}
+.lang_info .content .langue .title,.lang_info .content .cominfo .title{
+	padding-left: 20px;
+	padding-top: 80px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.lang_info .content .langue .detail,.lang_info .content .cominfo .detail{
+	margin-top: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	font-size: 20px;
+}
+.lang_info .content .left{
+	transform: translate(10px,-10px);
+}
+.lang_info .content .right{
+	transform: translate(480px,100px);
+}
+.lang_info .content>img:nth-child(3){
+	position: absolute;
+	width: 500px;
+	height: 275px;
+	left: 550px;
+	top: 100px;
+	border-radius: 7%;
+	transition-delay: .5s;
+}
+.lang_info .content:after{
+	position: absolute;
+	content: '';
+	width: 500px;
+	height: 275px;
+	left: 550px;
+	top: 100px;
+	background-color: rgba(0,0,0,.5);
+	transition-delay: .5s;
+	border-radius: 7%;
+}
+.lang_info .content>img:nth-child(5){
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	right : 40px;
+	bottom: -150px;
+	
+}
+.lang_info .content>img:nth-child(6){
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	right : 100px;
+	bottom: 100px;
+}
+.lang_info .content>img:nth-child(7){
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left : 400px;
+	bottom: -150px;
+}
+.lang_info .content>img:last-child{
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	left: 50px;
+	bottom: -80px;
+	border-radius: 5%;
+	transition-delay: 1s;
+}
+/*第五幕*/
+.table .image{
+	position: relative;
+	overflow: visible;
+}
+.table .image>img{
+	position: absolute;
+	width: 1200px;
+	height: 700px;
+	top: 20px;
+	left: 18px;
+}
+
+/*第六幕*/
+.autre .content{
+	width: 400px;
+	margin-top: 50px;
+	margin-left: 100px;
+	position: relative;
+}
+.autre .content>img:first-child{
+	width: 70px;
+	height: 70px;
+	margin-bottom: 30px;
+	margin-left: -40px;
+}
+.autre .content .pro1 .title,.autre .content .pro2 .title{
+	margin-top: 30px;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 30px
+}
+.autre .content .pro1 .detail,.autre .content .pro2 .detail{
+	margin-top: 10px;
+	font-size: 20px;
+	line-height:25px;
+}
+.autre .content .pro1 .detail>img,.autre .content .pro2 .detail>img{
+	width: 30px;
+	height: 30px;
+}
+.autre .content .dec{
+	width: 750px;
+	height: 525px;
+	position: absolute;
+	border-radius: 2%;
+}
+.autre .content .dec:nth-child(4){
+	transform: translate(525px,-400px) rotate(25deg);
+	transition: all 1s ease-in-out 1s;
+	z-index: 10000;
+}
+.autre .content .dec:nth-child(5){
+	transform: translate(575px,-250px) rotate(25deg);
+	transition: all 1s ease-in-out .5s;
+	z-index: 1000;
+}
+.autre .content .dec:nth-child(6){
+	transform: translate(625px,-100px) rotate(25deg);
+	transition: all 1s ease-in-out .25s;
+	z-index: 100;
+}
+
+/*动画*/
+.init-left{
+	transform: translate(-100%,0);
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+.init-right{
+	transform: translate(100%,0);
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+.init-top{
+	transform: translate(0,-100%);
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+.init-bottom{
+	transform: translate(0,100%);
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+.init-scale{
+	transform: scale(0);
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+.init-rotate{
+	transform: rotate(0deg);
+	opacity: 1;
+	transition: all 1s ease-in-out;
+}
+.done-left{
+	transform: translate(0,0);
+	opacity: 1;
+	transition: all 1s ease-in-out;
+}
+.done-right{
+	transform: translate(0,0);
+	opacity: 1;
+	transition: all 1s ease-in-out;
+}
+.done-top{
+	transform: translate(0,0);
+	opacity: 1;
+	transition: all 1s ease-in-out;
+}
+.done-bottom{
+	transform: translate(0,0);
+	opacity: 1;
+	transition: all 1s ease-in-out;
+}
+.done-scale{
+	transform: scale(1);
+	opacity: 1;
+	transition: all 1s ease-in-out;
+}
+.done-rotate{
+	transform: rotate(-90deg);
+	opacity: .5;
+	transition: all 2s ease-in-out;
+}
+

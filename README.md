@@ -1,5 +1,5 @@
 # webCV
-mon CV en website
+mon CV en website(Merci de l'ouvrir avec Chrome !)
 
 Lien : http://yanfengqiu.s3-website.eu-west-3.amazonaws.com/
 

@@ -3,9 +3,7 @@
 	padding: 0;
 	color: rgb(15,81,135);
 }
-body{
-	background-color: rgb(233,244,253);
-}
+
 
 /*导航条*/
 header{
@@ -69,6 +67,8 @@ header nav>.active{
 	/*background: url(../img/chevron.png) no-repeat;
 	background-size: cover;*/
 }
+
+
 body section .headlline{
 	font-size: 50px;
 	line-height: 150px;
@@ -201,36 +201,36 @@ body section .headlline{
 }
 
 /*第三幕*/
-.experience{
+.experience,.experience2{
 	position: relative;
 }
-.experience .content{
+.experience .content,.experience2 .content{
 	margin-left: 150px;
 	margin-top: 110px;
 }
-.experience .content .time{
+.experience .content .time,.experience2 .content .time{
 	padding-top: 8px;
 	padding-bottom: 6px;
 	font-size: 30px;
 	line-height: 30px;
 }
-.experience .content .intro{
+.experience .content .intro,.experience2 .content .intro{
 	padding-top: 8px;
 	padding-bottom: 6px;
 	font-size: 25px;
 	line-height: 25px;
 }
-.experience .content .detail{
+.experience .content .detail,.experience2 .content .detail{
 	padding-top: 8px;
 	padding-bottom: 6px;
 	font-size: 18px;
 	line-height: 18px;
 }
-.experience .content .detail img{
+.experience .content .detail img,.experience2 .content .detail img{
 	width: 20px;
 	height: 20px;
 }
-.experience>img:first-child{
+.experience>img:first-child,.experience2>img:first-child{
 	position: absolute;
 	right: 70px;
 	top: 30px;
@@ -238,7 +238,7 @@ body section .headlline{
 	height: 150px;
 	transition-delay: .5s
 }
-.experience>img:last-child{
+.experience>img:last-child,.experience2>img:last-child{
 	position: absolute;
 	bottom: 0;
 	right: -170px;

@@ -33,11 +33,11 @@ $(document).ready(function(){
 	})
 	$('.nav-item:nth-child(4)').click(function(){
 		changeActive($(this).index());
-		$("html").animate({scrollTop:'2700' + 'px'},500);
+		$("html").animate({scrollTop:'3600' + 'px'},500);
 	})
 	$('.nav-item:nth-child(5)').click(function(){
 		changeActive($(this).index());
-		$("html").animate({scrollTop:'4500' + 'px'},500);
+		$("html").animate({scrollTop:'5400' + 'px'},500);
 	})
 	changeActive(0);
 	changeClass('.info');
@@ -48,7 +48,6 @@ $(document).ready(function(){
 			changeClass('.info');
 			if(Top>150 + 250){
 				$('.info').animate({
-					bottom:Top - (150 + 250) + 'px',
 					opacity: 0.7},
 					5);
 			}
@@ -60,7 +59,6 @@ $(document).ready(function(){
 			changeClass('.formation');
 			if(Top> 900+150+250){
 				$('.formation').animate({
-				bottom:Top - (900+150+250) + 'px',
 				opacity: 0.7},
 				5);
 			}
@@ -71,13 +69,12 @@ $(document).ready(function(){
 		if(Top>900*2 - 200 && Top <=900*3){
 			changeActive(2);
 			changeClass('.experience');
-			$('.earth').animate({
+			$('.earth1').animate({
 				bottom:Top-875*2-150 + 'px',
 				opacity: 0.7},
 				5);
 			if(Top> 1800+150+250){
 				$('.experience').animate({
-				bottom:Top - (1800+150+250) + 'px',
 				opacity: 0.7},
 				5);
 			}	
@@ -85,31 +82,44 @@ $(document).ready(function(){
 				setInit();	
 		}
 		if(Top>900*3 - 200 && Top <=900*4){
-			changeActive(3);
-			changeClass('.lang_info');
-			if(Top> 2700+150+250){
-				$('.lang_info').animate({
-				bottom:Top - (2700+150+250) + 'px',
+			changeActive(2);
+			changeClass('.experience2');
+			$('.earth2').animate({
+				bottom:Top-875*3-150 + 'px',
 				opacity: 0.7},
 				5);
-			}
+			if(Top> 2700+150+250){
+				$('.experience').animate({
+				opacity: 0.7},
+				5);
+			}	
 			if(Top === 900*4)
-				setInit();
+				setInit();	
 		}
 		if(Top>900*4 - 200 && Top <=900*5){
 			changeActive(3);
-			changeClass('.table');
+			changeClass('.lang_info');
 			if(Top> 3600+150+250){
-				$('.table').animate({
-				bottom:Top - (3600+150+250) + 'px',
+				$('.lang_info').animate({
 				opacity: 0.7},
 				5);
 			}
 			if(Top === 900*5)
 				setInit();
+		}
+		if(Top>900*5 - 200 && Top <=900*6){
+			changeActive(3);
+			changeClass('.table');
+			if(Top> 4500+150+250){
+				$('.table').animate({
+				opacity: 0.7},
+				5);
+			}
+			if(Top === 900*6)
+				setInit();
 			
 		}
-		if(Top>900*5 - 200){
+		if(Top>900*6 - 200){
 			changeActive(4);
 			changeClass('.autre');
 
